@@ -232,5 +232,8 @@ for i, entry in enumerate(cmyk_sliders):
 
 choose_color_button = tk.Button(app, text="Choose Color", command=choose_color)
 choose_color_button.pack(pady=20)
+width= app.winfo_screenwidth()               
+height= app.winfo_screenheight()               
+app.geometry("%dx%d" % (width, height))
 update_labels((255,0,0))
 app.mainloop()
